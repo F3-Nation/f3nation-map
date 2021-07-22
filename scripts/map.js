@@ -35,7 +35,9 @@ $(window).on('load', function() {
     window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
       params[key] = value;
     });
-
+    
+    console.log(params.zoom);
+    
     if (Object.keys(params).length > 1){
         if (params.lat !== 'undefined') {
           lat = params.lat;
