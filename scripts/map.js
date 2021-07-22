@@ -36,7 +36,7 @@ $(window).on('load', function() {
       params[key] = value;
     });
     
-    console.log(params.zoom);
+    console.log(params);
     
     if (Object.keys(params).length > 1){
         if (params.lat !== 'undefined') {
