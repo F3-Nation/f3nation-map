@@ -66,6 +66,7 @@ form {
   margin-right: 8px;
 }
 
+/* Default. See mobile for different popup spec */
 .leaflet-popup-content {
   min-width: 150px;
 }
@@ -287,4 +288,25 @@ span.legend-icon {
 
 .ladder form, .ladder div {
   display: block;
+}
+
+/* Media query for iPhones */
+@media only screen and (max-width: 760px) {
+
+  .ladder {
+    width: 135px;
+    margin-top: 0 !important;
+    overflow: hidden;
+  }
+
+    /* Default. See mobile for different popup spec */
+  .leaflet-popup-content {
+    max-width: 100px;
+    margin: 12px 10px 10px 10px;
+  }
+
+  .leaflet-popup-content img {
+    display:none;
+  }
+
 }
